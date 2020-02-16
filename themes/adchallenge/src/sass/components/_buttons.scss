@@ -1,0 +1,22 @@
+.btn {
+  border-radius: 5px;
+  display: inline-block;
+  padding: 17px 51px;
+  font-family: $roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+
+  &-primary {
+    background-color: #FF5252;
+    &:hover {
+      border: 1px solid #FFFFFF;
+      background-color: transparent;
+    }
+  }
+}

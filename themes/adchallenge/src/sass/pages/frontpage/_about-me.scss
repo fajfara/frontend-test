@@ -1,0 +1,32 @@
+#block-about-me {
+  #challenge-about-me {
+    * {
+      // reset spacing
+      margin: 0;
+    }
+    display: flex;
+    .content-left {
+      width: 50%;
+      p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 30px;
+        color: $lightGray;
+        width: 83%;
+      }
+    }
+
+    .img-right {
+      width: 50%;
+      div.field {
+        display: flex;
+        justify-content: flex-end;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}

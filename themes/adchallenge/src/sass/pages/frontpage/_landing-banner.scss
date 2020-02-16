@@ -1,0 +1,50 @@
+.agiledrop-content-full-top-content-header {
+  height: 80vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+
+  #challenge-home {
+    text-align: center;
+
+    h2 {
+      text-transform: none;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 28px;
+      margin: 0 0 27px 0;
+      padding-bottom: 35px;
+      border-bottom: 1px solid $white;
+      display: inline-block;
+    }
+    h1 {
+      margin: 0 0 57px 0;
+    }
+
+    .field.field--type-link {
+      border-radius: 5px;
+      display: inline-block;
+      padding: 17px 51px;
+      transition: all 0.3s ease-in;
+      cursor: pointer;
+      background-color: #FF5252;
+      &:hover {
+        border: 1px solid #FFFFFF;
+        background-color: transparent;
+      }
+      a {
+        text-decoration: none;
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: #fff;
+      }
+    }
+
+
+  }
+}

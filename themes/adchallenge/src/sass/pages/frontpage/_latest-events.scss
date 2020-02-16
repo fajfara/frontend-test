@@ -1,0 +1,25 @@
+#block-latest-event {
+  background-color: $darkBlue;
+  #challenge-event {
+    display: flex;
+
+    .img-left {
+      width: 33%;
+    }
+
+    .content-right {
+      width: 66%;
+      * {
+        margin: 0;
+      }
+
+      p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 30px;
+        color: $lightGray;
+      }
+    }
+  }
+}

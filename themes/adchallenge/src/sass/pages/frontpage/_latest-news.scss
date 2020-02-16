@@ -1,0 +1,60 @@
+#block-adchallenge-content.block-system-main-block {
+  .view-content {
+    display: flex;
+    .views-row {
+      width: 30%;
+      &:not(:last-child) {
+        margin-right: 60px;
+      }
+
+      article {
+        h2 {
+          margin: 0;
+          a {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            color: #FFFFFF;
+            text-decoration: none;
+            text-transform: none;
+          }
+        }
+        .node__content {
+          .createdDate {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+            text-transform: uppercase;
+            color: $mediumGray;
+          }
+
+          img {
+            width: 100% !important;
+          }
+
+          p {
+            color: $lightGray;
+          }
+
+          .node__links {
+            ul {
+              li {
+                padding: 0;
+                a {
+                  text-decoration: none;
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 14px;
+                  line-height: 16px;
+                  color: #FFFFFF;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

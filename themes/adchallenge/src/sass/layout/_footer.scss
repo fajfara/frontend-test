@@ -1,0 +1,30 @@
+footer {
+  nav {
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: $darkBlue;
+    }
+    ul {
+      display: flex;
+      li {
+        a {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 16px;
+          color: $mediumGray;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  #block-footercreated {
+
+  }
+}
