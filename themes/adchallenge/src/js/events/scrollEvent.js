@@ -15,10 +15,11 @@ export default function scrollEvent() {
 
   // header add class on scroll
   function handleHeaderScroll(windowY) {
-    if(windowY) {
-      header.classList.add('scroll');
+
+    if(windowY > 50) {
+      header.classList.add('scroll', 'fixed');
     } else {
-      header.classList.remove('scroll');
+      header.classList.remove('scroll', 'fixed');
     }
 
   }

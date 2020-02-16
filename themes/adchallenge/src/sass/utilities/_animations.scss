@@ -1,26 +1,28 @@
-@keyframes FadeOut {
+@keyframes moveNavFromTop {
   0% {
-    opacity: 1;
-    height: initial;
+      top: -50%;
   }
-  99% {
-    opacity: 0;
-    height: initial;
-  }
+
   100% {
-    height: 0;
-    opacity: 0;
-    height: 0;
+    top: 0%;
+    position: fixed;
   }
 }
 
-@keyframes FadeIn {
+@keyframes simpleFadeIn {
+   0% {
+     opacity: 0;
+   }
+   100% {
+     opacity: 1;
+   }
+ }
+
+@keyframes simpleFadeOut {
   0% {
-    opacity: 0;
-    height: initial;
+    opacity: 1;
   }
   100% {
-    opacity: 1;
-    height: initial;
+    opacity: 0;
   }
 }

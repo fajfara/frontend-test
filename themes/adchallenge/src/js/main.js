@@ -1,11 +1,13 @@
 import initEvents from './events/_main';
+import initNavbarJS from './navbar/main.js';
 
 initEvents();
 
-document.addEventListener('load', () => {
-  console.log("js loaded");
+window.onload = () => {
   // init events
   initEvents();
-
-})
+  console.log("FFS")
+  // navbar scripts
+  initNavbarJS();
+}
 

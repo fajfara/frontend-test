@@ -1,9 +1,7 @@
-// @import '../../../../../node_modules/bulma/sass/utilities/all';
-// @import '../../../../../node_modules/bulma/sass/utilities/mixins';
-// @import '../../../../../node_modules/bulma/sass/grid/columns';
-// @import '../../../../../node_modules/bulma/sass/elements/container';
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  @media screen and (max-width: 1200px) {
+    max-width: 990px;
+  }
 }
