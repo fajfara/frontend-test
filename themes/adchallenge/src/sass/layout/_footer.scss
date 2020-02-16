@@ -1,5 +1,6 @@
 footer {
   nav {
+    padding: 23px 0 26px 0;
     position: relative;
     * {
       margin: 0;
@@ -10,7 +11,7 @@ footer {
       top: 0;
       left: -999px;
       height: 100%;
-      width: 99999px;
+      width: 9999px;
       background-color: #0F2123;
       z-index: -1;
     }
@@ -19,6 +20,9 @@ footer {
     ul {
       display: flex;
       li {
+        &:not(:last-child) {
+          margin-right: 29px;
+        }
         a {
           font-style: normal;
           font-weight: normal;
@@ -26,11 +30,15 @@ footer {
           line-height: 16px;
           color: $mediumGray;
           text-decoration: none;
+          &:hover {
+            color: $white;
+          }
         }
       }
     }
   }
   #block-footercreated {
+    padding: 19px 0;
     * {
       margin: 0;
     }
@@ -42,7 +50,7 @@ footer {
       top: 0;
       left: -999px;
       height: 100%;
-      width: 99999px;
+      width: 9999px;
       background-color: #1E2C2E;
       z-index: -1;
     }

@@ -1,6 +1,9 @@
 html {
   font-family: $roboto;
   background-color: $black;
+  body {
+    overflow-x: hidden;
+  }
 }
 
 @import 'typography';

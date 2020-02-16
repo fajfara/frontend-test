@@ -12,6 +12,11 @@ header {
     display: flex;
     justify-content: space-between;
 
+    .container {
+      max-width: initial;
+      margin:  initial;
+    }
+
     #block-adchallenge-branding {
       display: flex;
       align-items: center;
