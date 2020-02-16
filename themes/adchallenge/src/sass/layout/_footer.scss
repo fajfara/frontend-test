@@ -1,15 +1,21 @@
 footer {
   nav {
     position: relative;
+    * {
+      margin: 0;
+    }
     &:before {
       content: '';
       position: absolute;
       top: 0;
-      left: 0;
+      left: -999px;
       height: 100%;
-      width: 100%;
-      background-color: $darkBlue;
+      width: 99999px;
+      background-color: #0F2123;
+      z-index: -1;
     }
+    display: flex;
+    justify-content: center;
     ul {
       display: flex;
       li {
@@ -25,6 +31,37 @@ footer {
     }
   }
   #block-footercreated {
+    * {
+      margin: 0;
+    }
+    display: flex;
+    justify-content: center;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -999px;
+      height: 100%;
+      width: 99999px;
+      background-color: #1E2C2E;
+      z-index: -1;
+    }
 
+    p {
+      color: $lightGray;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        text-decoration-line: underline;
+        text-transform: uppercase;
+        color: #FFFFFF;
+      }
+    }
   }
 }
