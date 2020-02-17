@@ -16,8 +16,9 @@ header {
       justify-content: space-between;
 
       .container {
-        max-width: initial;
-        margin:  initial;
+        max-width: initial !important;
+        margin:  initial !important;
+        padding: 0 !important;
       }
 
       #block-adchallenge-branding {
@@ -106,6 +107,10 @@ header {
         animation: simpleFadeOut 0.3s ease-in !important;
       }
     }
+
+    .hamburger-menu-btn {
+      top: -25%;
+    }
   }
 
   // hamburger btn
@@ -116,8 +121,8 @@ header {
     transition: transform 400ms;
     user-select: none;
     position: absolute;
-    top: -8px;
-    right: 0;
+    top: 0%;
+    right: 10px;
     display: none;
 
     .line {
@@ -153,16 +158,38 @@ header {
   @media screen and (max-width: 600px) {
     .container {
       .region.region-header {
+        .site-slogan {
+          display: none;
+        }
         nav {
           position: fixed;
           width: 100vw;
           height: 100vh;
           bottom: 0;
           background: #111;
-          transform: translateX(-100%);
+          left: -100%;
           transition: all 0.3s ease-in;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          ul.menu {
+            height: initial;
+            flex-direction: column;
+            li:not(:last-child) {
+              margin-bottom: 2em;
+              margin-right: 0;
+            }
+
+            li {
+              justify-content: center;
+              a {
+                font-size: 28px;
+              }
+            }
+          }
           &.open {
-            transform: translateX(0);
+            left: 0;
           }
         }
       }

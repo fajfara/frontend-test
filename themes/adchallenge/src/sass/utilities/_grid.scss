@@ -3,5 +3,17 @@
   margin: 0 auto;
   @media screen and (max-width: 1200px) {
     max-width: 990px;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+
+  @media screen and (max-width: 990px) {
+    max-width: 768px;
+  }
+
+  @media screen and (max-width: 576px) {
+    max-width: 100%;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
   }
 }

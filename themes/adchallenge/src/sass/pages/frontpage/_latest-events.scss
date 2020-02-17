@@ -50,4 +50,19 @@
       }
     }
   }
+
+  @media screen and (max-width: 576px) {
+  #challenge-event {
+    flex-direction: column;
+    .img-left {
+      width: 100%;
+      margin-bottom: 4em;
+    }
+
+    .content-right {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  }
 }

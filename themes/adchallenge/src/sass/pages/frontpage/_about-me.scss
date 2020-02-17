@@ -58,13 +58,31 @@
           right: 0;
           bottom: 0;
           transform: translate(+50%, +50%);
-          z-index: -0;
+          z-index: 0;
         }
         img {
           width: 100%;
           height: auto;
           position: relative;
+          z-index: 10;
         }
+      }
+    }
+
+  }
+
+  @media screen and (max-width: 768px) {
+    #challenge-about-me {
+      flex-direction: column;
+      padding: 120px 0;
+
+      .content-left {
+        width: 100% !important;
+        margin-bottom: 4em;
+      }
+
+      .img-right {
+        width: 100% !important;
       }
     }
   }
