@@ -1,13 +1,11 @@
 const {src, dest, watch } = require('gulp'),
-  rename = require('gulp-rename'),
-  sass = require('gulp-sass'),
-  autoprefixer = require('gulp-autoprefixer'),
-  browserify = require('browserify'),
-  source = require("vinyl-source-stream"),
-  uglify = require('gulp-uglify'),
-  buffer = require("vinyl-buffer"),
-  babel = require('gulp-babel'),
-  concat = require('gulp-concat');
+      rename = require('gulp-rename'),
+      sass = require('gulp-sass'),
+      autoprefixer = require('gulp-autoprefixer'),
+      browserify = require('browserify'),
+      source = require("vinyl-source-stream"),
+      uglify = require('gulp-uglify'),
+      buffer = require("vinyl-buffer");
 
 
 const styleSRC = './themes/adchallenge/src/sass/main.scss',
